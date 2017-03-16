@@ -41,8 +41,8 @@ class App extends React.Component {
 						<button>Add Item</button>
 					</form>
 					<ul className="items">
-						{this.state.items.map((item) => {
-							return <ClubItem data={item} key={item.key}/>
+						{this.state.items.map((item,i) => {
+							return <ClubItem data={item} key={i}/>
 						})}
 					</ul>
 				</section>
